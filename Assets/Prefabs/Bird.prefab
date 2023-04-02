@@ -38,7 +38,7 @@ Transform:
   - {fileID: 5322077194936093356}
   - {fileID: 5651622128329332088}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4232711918528246614
 Animator:
@@ -79,6 +79,7 @@ MonoBehaviour:
   score: {fileID: 8300000, guid: 005612375b6cb2a4b823cdeefae7251f, type: 3}
   flap: {fileID: 8300000, guid: 48519cf2178bd2a43ae85754e65bd690, type: 3}
   punch: {fileID: 8300000, guid: e4e26d548c316d64da319097c3346d6c, type: 3}
+  stage: 1
   isDead: 0
 --- !u!54 &7758050882808015592
 Rigidbody:
@@ -119,7 +120,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.18
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5100,7 +5101,6 @@ GameObject:
   - component: {fileID: 8642477578470729615}
   - component: {fileID: 2719845028577446663}
   - component: {fileID: 5909325993949125566}
-  - component: {fileID: 7501065706492505395}
   m_Layer: 0
   m_Name: Peck
   m_TagString: Untagged
@@ -5173,27 +5173,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7501065706492505395
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444997500449803416}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3648404055372065561
 GameObject:
   m_ObjectHideFlags: 0
@@ -5205,7 +5184,6 @@ GameObject:
   - component: {fileID: 3424209395873232121}
   - component: {fileID: 3171914234523924862}
   - component: {fileID: 5522595312703976887}
-  - component: {fileID: 653502300593398795}
   m_Layer: 0
   m_Name: WingRight
   m_TagString: Untagged
@@ -5278,27 +5256,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &653502300593398795
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648404055372065561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4968838277473385249
 GameObject:
   m_ObjectHideFlags: 0
@@ -5310,7 +5267,6 @@ GameObject:
   - component: {fileID: 5322077194936093356}
   - component: {fileID: 4443338956507983514}
   - component: {fileID: 2347706585939005159}
-  - component: {fileID: 8155948196850138093}
   m_Layer: 0
   m_Name: Legs
   m_TagString: Untagged
@@ -5383,27 +5339,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8155948196850138093
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4968838277473385249}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8853752580859042498
 GameObject:
   m_ObjectHideFlags: 0

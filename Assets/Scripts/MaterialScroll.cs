@@ -6,6 +6,7 @@ using UnityEngine;
 public class MaterialScroll : MonoBehaviour
 {
     private Material _rend;
+    public float speedTexture = 0.06f;
     
     void Start()
     {
@@ -18,7 +19,7 @@ public class MaterialScroll : MonoBehaviour
         {
             _rend.SetFloat("_speedTexture", 0.0f);
         }else{
-            _rend.SetFloat("_speedTexture", 0.06f);
+            _rend.SetFloat("_speedTexture", speedTexture);
         }
     }
 }
